@@ -19,7 +19,7 @@ def recommend(movie):
         return ["Movie not found"]
 
     index = mv[mv['title'].str.lower() == movie].index[0]
-    distances = sim[index]
+    distances = similarity[index]
 
     movies_list = sorted(list(enumerate(distances)),
                          reverse=True,
