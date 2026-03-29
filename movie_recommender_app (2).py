@@ -3,7 +3,7 @@ import streamlit as st
 import pickle
 
 mv = pickle.load(open('movies.pkl','rb'))
-sim = pickle.load(open('similarity.pkl','rb'))
+
 
 def recommend(movie):
     movie = movie.lower()
